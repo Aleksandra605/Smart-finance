@@ -1,0 +1,33 @@
+// transactions page
+@import '../Components/transactions/transactionsPage/transactionsPage.module';
+@import '../Components/transactions/transactionsView/transactionsView.module';
+@import '../Components/transactions/transactionsList/transactionsList.module';
+@import '../Components/transactions/form/form.module';
+@import '../Components/transactions/summary/summary.module';
+
+// reports page
+@import '../Components/reports/dateSelector/dateSelector.module';
+@import '../Components/reports/reportsChart/reportsChart.module';
+@import '../Components/reports/reportsList/reportsList.module';
+@import '../Components/reports/reportsPage/reportsPage.module';
+@import '../Components/reports/reportsTotalAmounts/totalAmounts.module';
+
+// Balance form
+@import '../Components/balance/balance.module';
+
+// header
+@import '../Components/header/header.module';
+@import '../Components/header/logo.module';
+@import '../Components/header/toggleTheme.module';
+
+// SVG generator
+@import '../Components/svg-generator/svg.module';
+
+// Loader
+@import '../Components/loader/loader.module';
+
+// Views Login and SignUp
+@import '../Components/views/views.module';
+
+// Colors, shadows, and other
+@import '../sass/variables';

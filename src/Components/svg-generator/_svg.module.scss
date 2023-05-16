@@ -1,0 +1,79 @@
+@import '../../sass/variables';
+
+html[data-theme='light'] {
+  .profile {
+    transition: $theme-transition;
+    box-shadow: $shadow-btn-light;
+  }
+}
+
+html[data-theme='dark'] {
+  .profile {
+    transition: $theme-transition;
+    box-shadow: $shadow-btn-dark;
+  }
+}
+
+.profile {
+  fill: $color-violet !important;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.svgIcon {
+  width: 56px !important;
+  height: 56px !important;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logout {
+  margin-left: 10px;
+}
+
+.svgArrows {
+  padding: 6px;
+  width: 20px;
+  height: 22px;
+}
+
+.arrowGoBack {
+  width: 18px;
+  height: min-content;
+  padding-top: 7px;
+  margin-right: 15px;
+}
+
+path {
+  top: 0;
+  left: 0;
+}
+
+.reportsIcon {
+  width: 18px;
+  height: 18px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.deleteIcon {
+  display: block;
+  position: absolute;
+
+  @media (min-width: 320px) {
+    width: 16px;
+    height: 18px;
+    left: 35%;
+  }
+
+  @media (min-width: 480px) {
+    width: 22px;
+    height: 24px;
+    left: 30%;
+  }
+}

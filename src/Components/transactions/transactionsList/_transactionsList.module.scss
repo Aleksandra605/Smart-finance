@@ -1,0 +1,211 @@
+@import '../../../sass/variables';
+
+.deleteBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px !important;
+  height: 44px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  outline: none;
+  fill: $color-font;
+  transition: $transition;
+  border-radius: 50%;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    fill: white !important;
+    background: #18dcff9c;
+    background: -webkit-linear-gradient(top left, #18dcff9c, #7f5fffb9);
+    background: -moz-linear-gradient(top left, #18dcff9c, #7f5fffb9);
+    background: linear-gradient(to bottom right, #18dcff9c, #7f5fffb9);
+  }
+
+  @media (min-width: 320px) {
+    margin-left: 7px;
+  }
+
+  @media (min-width: 480px) {
+    margin-left: 10px;
+  }
+}
+
+.transactionsList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: 320px) {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 716px;
+  }
+
+  @media (min-width: 1140px) {
+    margin: 0;
+  }
+}
+
+html[data-theme='light'] {
+  .transactionCard {
+    color: $text-color-light;
+    fill: $text-color-light;
+  }
+  .transactionCard:hover,
+  .transactionCard:focus {
+    background-color: $background-color-light;
+    box-shadow: $shadow-form-light;
+  }
+  .deleteBtn {
+    fill: $text-color-light;
+  }
+  .deleteBtn:hover,
+  .deleteBtn:focus {
+    box-shadow: $shadow-btn-light;
+    fill: whitesmoke;
+  }
+}
+
+html[data-theme='dark'] {
+  .transactionCard {
+    color: $text-color-dark;
+    fill: $text-color-dark;
+  }
+  .transactionCard:hover,
+  .transactionCard:focus {
+    background-color: $background-color-dark;
+    box-shadow: $shadow-form-dark;
+  }
+  .deleteBtn {
+    fill: $text-color-dark;
+  }
+  .deleteBtn:hover,
+  .deleteBtn:focus {
+    box-shadow: $shadow-btn-dark;
+    fill: whitesmoke;
+  }
+}
+
+.transactionCard {
+  border-radius: $border-radius;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  letter-spacing: 1px;
+  transition: $transition;
+  text-shadow: $shadow-text-dark;
+}
+
+.spanDate {
+  min-width: 70px;
+
+  @media (min-width: 320px) {
+    font-size: 8px;
+  }
+
+  @media (min-width: 480px) {
+    font-size: 10px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.spanDescr {
+  width: 100%;
+  word-break: break-all;
+
+  @media (min-width: 320px) {
+    font-size: 8px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  @media (min-width: 480px) {
+    font-size: 10px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 12px;
+    margin-bottom: 0;
+    text-align: left;
+    margin-left: 10px;
+  }
+}
+
+.groupedDateDescr {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 45%;
+  max-width: 45%;
+  @media (min-width: 320px) {
+    flex-direction: column-reverse;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.spanCategory {
+  width: 30%;
+  @media (min-width: 320px) {
+    margin-left: 7px;
+    font-size: 8px;
+  }
+
+  @media (min-width: 480px) {
+    font-size: 10px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+}
+
+.spanAmount {
+  color: $color-violet;
+  font-weight: 700;
+  text-align: right;
+
+  @media (min-width: 320px) {
+    margin-left: 7px;
+    font-size: 8px;
+    width: 15%;
+  }
+
+  @media (min-width: 480px) {
+    font-size: 10px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+}
+
+.spanDelete {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 7px;
+
+  @media (min-width: 320px) {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (min-width: 768px) {
+    width: 35px !important;
+    margin-left: 15px;
+  }
+}

@@ -1,0 +1,67 @@
+@import '../../sass/variables';
+
+html[data-theme='light'] {
+  .toggle {
+    transition: $theme-transition;
+    box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #c7cdd4,
+      4px 4px 4px 0px #c7cdd4 inset, -4px -4px 4px 0px #ffffff inset;
+  }
+  .indicator {
+    transition: $theme-transition;
+    background-color: $background-color-light;
+    box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #c7cdd4;
+  }
+}
+
+html[data-theme='dark'] {
+  .toggle {
+    transition: $theme-transition;
+    box-shadow: -8px -4px 8px 0px #2e2e2e, 8px 4px 12px 0px #141414,
+      4px 4px 4px 0px #141414 inset, -4px -4px 4px 0px #2e2e2e inset;
+  }
+  .indicator {
+    transition: $theme-transition;
+    background: #18dcffd6;
+    background: -webkit-linear-gradient(top left, #18dcff, #7f5fffe8);
+    background: -moz-linear-gradient(top left, #18dcff, #7f5fffec);
+    background: linear-gradient(to bottom right, #18dcff, #7f5fffed);
+
+    box-shadow: -8px -4px 8px 0px #2e2e2e, 8px 4px 12px 0px #141414;
+  }
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.label-text {
+  margin-left: 16px;
+}
+
+.toggle {
+  isolation: isolate;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.toggleState {
+  display: none;
+}
+
+.indicator {
+  height: 100%;
+  width: 200%;
+  border-radius: 15px;
+  transform: translate3d(-75%, 0, 0);
+  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+}
+
+.toggleState:checked ~ .indicator {
+  transform: translate3d(25%, 0, 0);
+}

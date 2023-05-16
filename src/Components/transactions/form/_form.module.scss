@@ -1,0 +1,294 @@
+@import '../../../sass/variables';
+
+html[data-theme='light'] {
+  .input {
+    transition: $transition;
+    background-color: $background-color-light;
+    box-shadow: $shadow-input-light;
+    &:hover,
+    &:focus {
+      box-shadow: $shadow-input-light-hover;
+    }
+  }
+
+  .select {
+    background-color: $background-color-light;
+    box-shadow: $shadow-btn-light;
+  }
+  .option {
+    color: $text-color-light;
+    &:hover {
+      color: $background-color-light;
+    }
+  }
+
+  .btn {
+    box-shadow: $shadow-btn-light;
+    transition: $transition;
+    color: $text-color-light;
+    transition: $transition;
+    text-shadow: $shadow-text-light;
+    &:hover {
+      color: $color-violet !important;
+      box-shadow: $shadow-inset-light;
+    }
+    &:active {
+      color: $color-violet;
+      box-shadow: $shadow-inset-light;
+    }
+  }
+
+  .description {
+    transition: $transition;
+  }
+}
+
+html[data-theme='dark'] {
+  .input {
+    transition: $transition;
+    background-color: $background-color-dark;
+    box-shadow: $shadow-input-dark;
+    &:hover,
+    &:focus {
+      box-shadow: $shadow-input-dark-hover;
+    }
+  }
+
+  .select {
+    background-color: $background-color-dark;
+    box-shadow: $shadow-btn-dark;
+  }
+
+  .option {
+    color: $text-color-dark;
+    &:hover {
+      color: whitesmoke;
+    }
+  }
+  .btn {
+    box-shadow: $shadow-btn-dark;
+    transition: $transition;
+    color: $text-color-dark;
+    text-shadow: $shadow-text-dark;
+    &:hover {
+      color: $color-violet !important;
+      box-shadow: $shadow-inset-dark;
+    }
+    &:active {
+      color: $color-violet;
+      box-shadow: $shadow-inset-dark;
+    }
+  }
+  .description {
+    transition: $transition;
+  }
+}
+
+.form {
+  display: flex;
+  font-size: 12px;
+  padding: 15px;
+  border-radius: $border-radius;
+
+  @media (min-width: 320px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 400px) {
+    width: 380px;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: 1040px) {
+    flex-direction: row;
+  }
+}
+
+.inputsBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    margin-bottom: 30px;
+    height: $standard-height;
+  }
+
+  @media (min-width: 1040px) {
+    margin-bottom: 0;
+  }
+}
+
+.input {
+  outline: none !important;
+  text-align: left;
+  height: $standard-height;
+  color: rgb(118, 118, 118);
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  transition: $transition;
+  appearance: none;
+  -webkit-appearance: none;
+  margin-bottom: 10px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+    height: 100%;
+  }
+}
+
+.dateInput {
+  color: rgb(118, 118, 118);
+  @media (min-width: 320px) {
+    width: 85%;
+  }
+
+  @media (min-width: 768px) {
+    width: 80px;
+  }
+}
+
+.date {
+  @extend .input;
+
+  @media (min-width: 320px) {
+    border-radius: $border-radius;
+  }
+  @media (min-width: 768px) {
+    width: 20%;
+    min-width: 140px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.description {
+  @extend .input;
+
+  @media (min-width: 320px) {
+    border-radius: $border-radius;
+  }
+
+  @media (min-width: 768px) {
+    margin: 0;
+    border-radius: 0;
+    width: 30%;
+  }
+}
+
+.dropdownMenu {
+  @extend .input;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &:hover .select {
+    visibility: visible;
+    opacity: 1;
+    z-index: 50;
+  }
+  @media (min-width: 320px) {
+    border-radius: $border-radius;
+  }
+
+  @media (min-width: 768px) {
+    border-radius: 0;
+    width: 30%;
+    margin: 0;
+  }
+}
+
+.menuTitle {
+  font-weight: 400;
+  color: rgb(118, 118, 118);
+  letter-spacing: normal;
+  font-size: 12px;
+}
+
+.select {
+  width: 100%;
+  height: 140px;
+  transition: $transition;
+  border: none;
+  outline: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: $transition;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  overflow-y: auto;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  height: 35px !important;
+  transition: 200ms;
+
+  &:hover {
+    background-color: $color-violet;
+  }
+}
+
+.amount {
+  @extend .input;
+
+  @media (min-width: 320px) {
+    border-radius: $border-radius;
+  }
+
+  @media (min-width: 768px) {
+    width: 20%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 120px;
+  }
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+  min-width: 260px !important;
+
+  @media (min-width: 320px) {
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+
+  @media (min-width: 1040px) {
+    margin-left: 15px;
+  }
+}
+
+.btn {
+  text-align: center;
+  width: 125px;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  border-radius: $border-radius;
+  background-color: transparent;
+}

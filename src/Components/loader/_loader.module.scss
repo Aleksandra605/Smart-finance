@@ -1,0 +1,87 @@
+@import '../../sass/variables';
+
+html[data-theme='light'] {
+  .loader {
+    border: 4px solid $background-color-light;
+    box-shadow: $shadow-btn-light;
+    &::before {
+      background: $background-color-light;
+      border: 2px solid $background-color-light;
+      box-shadow: $shadow-input-light;
+    }
+  }
+}
+
+html[data-theme='dark'] {
+  .loader {
+    border: 4px solid $background-color-dark;
+    box-shadow: $shadow-btn-dark;
+    &::before {
+      background: $background-color-dark;
+      border: 2px solid $background-color-dark;
+      box-shadow: $shadow-input-dark;
+    }
+  }
+}
+
+.loader__container {
+  margin-left: auto;
+  margin-right: auto;
+  width: min-content;
+  height: min-content;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.loader:before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.loader span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: linear-gradient(-225deg, #69f3ff 2%, #7d5fff 100%);
+
+  filter: blur(20px);
+  z-index: -1;
+  animation: animate 0.5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader__text {
+  top: 25%;
+  left: 25%;
+  font-size: 12px;
+  z-index: 10;
+  color: $color-violet;
+}

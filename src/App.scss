@@ -1,0 +1,230 @@
+@import './sass/variables';
+
+body {
+  transition: $transition;
+  background-color: var(--background-color);
+  font-family: 'Montserrat', sans-serif !important;
+  letter-spacing: 1px;
+}
+
+.loaderBox {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+input {
+  outline: none;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html[data-theme='light'] {
+  input:-webkit-autofill {
+    -webkit-text-fill-color: #767676 !important;
+  }
+}
+
+html[data-theme='dark'] {
+  input:-webkit-autofill {
+    -webkit-text-fill-color: #767676 !important;
+  }
+}
+
+// Date picker
+html[data-theme='light'] {
+  .css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root {
+    color: $text-color-light !important;
+  }
+  /* Div date picker */
+  .css-1yllih9-MuiPaper-root-MuiPickersPopper-paper {
+    background-color: $background-color-light !important;
+    color: $text-color-light !important;
+  }
+  /* Button day */
+  .css-195y93z-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
+    color: $text-color-light;
+    box-shadow: $shadow-btn-light !important ;
+  }
+  .css-bkrceb-MuiButtonBase-root-MuiPickersDay-root {
+    color: $text-color-light;
+  }
+  .css-bkrceb-MuiButtonBase-root-MuiPickersDay-root:hover {
+    box-shadow: $shadow-btn-light !important ;
+  }
+  .css-bkrceb-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+    box-shadow: $shadow-btn-light !important ;
+  }
+  .css-195y93z-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+    box-shadow: $shadow-btn-light !important ;
+  }
+  // Year buttons
+  .css-3eghsz-PrivatePickersYear-button:hover,
+  .css-3eghsz-PrivatePickersYear-button:focus {
+    box-shadow: $shadow-btn-light !important;
+  }
+  .css-3eghsz-PrivatePickersYear-button.Mui-selected {
+    box-shadow: $shadow-btn-light !important;
+  }
+  /* Arrow-button - switch view */
+
+  .css-12mkn7b-MuiButtonBase-root-MuiIconButton-root-MuiPickersCalendarHeader-switchViewButton {
+    color: $text-color-light !important;
+  }
+}
+
+html[data-theme='dark'] {
+  .css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root {
+    color: $text-color-dark !important;
+  }
+  /* Div date picker */
+  .css-1yllih9-MuiPaper-root-MuiPickersPopper-paper {
+    background-color: $background-color-dark !important;
+    color: $text-color-dark !important;
+  }
+  /* Button day */
+  .css-195y93z-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
+    color: $text-color-dark;
+    box-shadow: $shadow-btn-dark !important ;
+  }
+  .css-bkrceb-MuiButtonBase-root-MuiPickersDay-root {
+    color: $text-color-dark;
+  }
+  .css-bkrceb-MuiButtonBase-root-MuiPickersDay-root:hover {
+    box-shadow: $shadow-btn-dark !important ;
+  }
+  .css-bkrceb-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+    box-shadow: $shadow-btn-dark !important ;
+  }
+  .css-195y93z-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+    box-shadow: $shadow-btn-dark !important ;
+  }
+  // Year buttons
+  .css-3eghsz-PrivatePickersYear-button:hover,
+  .css-3eghsz-PrivatePickersYear-button:focus {
+    box-shadow: $shadow-btn-dark !important;
+  }
+  .css-3eghsz-PrivatePickersYear-button.Mui-selected {
+    box-shadow: $shadow-btn-dark !important;
+  }
+  /* Arrow-button - switch view */
+
+  .css-12mkn7b-MuiButtonBase-root-MuiIconButton-root-MuiPickersCalendarHeader-switchViewButton {
+    color: $text-color-dark !important;
+  }
+}
+
+/* Button with calendar svg */
+.css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root {
+  //color: #79819c !important;
+  transition: all 300ms !important;
+}
+
+.css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root:hover {
+  background-color: transparent !important;
+  color: #7c5fff !important;
+}
+
+/* Div date picker */
+.css-1yllih9-MuiPaper-root-MuiPickersPopper-paper {
+  //background-color: #e7eef7 !important;
+  // color: #79819c !important;
+}
+
+/* Week day label */
+
+.css-raiqh1-MuiTypography-root-MuiDayPicker-weekDayLabel {
+  color: #7c5fff !important;
+}
+
+/* Button day */
+
+.css-195y93z-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
+  background-color: transparent !important;
+  border: none !important;
+  //  color: #79819c !important;
+  // box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.779), 2px 2px 5px #bababa !important;
+}
+
+.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root {
+  background-color: transparent !important;
+  // color: #79819c !important;
+  transition: all 300ms !important;
+}
+
+.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root:hover {
+  // box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.779), 2px 2px 5px #bababa !important;
+  color: #7c5fff !important;
+}
+
+.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  background: rgba(124, 95, 255, 0.636) !important;
+  color: white !important;
+  // box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.779), 2px 2px 5px #bababa !important;
+}
+
+.css-195y93z-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  background: rgba(124, 95, 255, 0.636) !important;
+  //  box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.779), 2px 2px 5px #bababa !important;
+}
+
+/* Year buttons */
+
+.css-3eghsz-PrivatePickersYear-button {
+  transition: all 300ms !important;
+}
+
+.css-3eghsz-PrivatePickersYear-button:hover,
+.css-3eghsz-PrivatePickersYear-button:focus {
+  color: #7c5fff !important;
+  background-color: transparent !important;
+  // box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.779), 2px 2px 5px #bababa !important;
+}
+
+.css-3eghsz-PrivatePickersYear-button.Mui-selected {
+  background-color: #7c5fff !important;
+  color: white !important;
+  // box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.779), 2px 2px 5px #bababa !important;
+}
+
+/* Arrow-button - switch view */
+
+.css-12mkn7b-MuiButtonBase-root-MuiIconButton-root-MuiPickersCalendarHeader-switchViewButton {
+  // color: #79819c !important;
+  transition: all 300ms !important;
+}
+.css-12mkn7b-MuiButtonBase-root-MuiIconButton-root-MuiPickersCalendarHeader-switchViewButton:hover {
+  background-color: transparent !important;
+  color: #7c5fff !important;
+}
+
+/* Buttons-arrows - left/right */
+
+.css-1ae9t7h-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button {
+  color: inherit !important;
+  transition: all 300ms !important;
+}
+.css-1ae9t7h-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button:hover {
+  color: #7c5fff !important;
+  background-color: transparent !important;
+}
+
+.css-jro82b-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button {
+  color: inherit !important;
+  transition: all 300ms !important;
+}
+
+.css-jro82b-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button:hover {
+  color: #7c5fff !important;
+  background-color: transparent !important;
+}

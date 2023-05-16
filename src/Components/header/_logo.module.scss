@@ -1,0 +1,72 @@
+@import '../../sass/variables';
+
+html[data-theme='light'] {
+  .logo {
+    background-color: $background-color-light;
+    border: 3px solid $background-color-light;
+    box-shadow: -2px -2px 5px white, 2px 2px 5px rgb(145, 145, 145);
+  }
+  .logo__inner {
+    box-shadow: -2px -2px 5px white, 2px 2px 5px rgb(145, 145, 145);
+  }
+}
+
+html[data-theme='dark'] {
+  .logo {
+    background-color: $background-color-dark;
+    border: 3px solid $background-color-dark;
+    box-shadow: -2px -2px 5px #2d2d2d, 2px 2px 5px #151515;
+  }
+  .logo__inner {
+    box-shadow: -2px -2px 5px #2d2d2d, 2px 2px 5px #151515;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.txt {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  background: #18dcff;
+  background: linear-gradient(to left, #18dcff 20%, #7d5fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: $shadow-text-dark;
+}
+
+.logo {
+  transition: $transition;
+  display: flex;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.logo__inner {
+  transition: $transition;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  top: 10%;
+  left: 10%;
+}

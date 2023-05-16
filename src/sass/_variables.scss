@@ -1,0 +1,68 @@
+$color-font: #79819c;
+$color-pink: #fda7df;
+$color-yellow: #fffa65;
+$color-background: #e7eef7;
+$color-green: #3ae374;
+$color-violet: #7c5fff;
+$color-blue: #18dcff;
+$color-red: rgb(255, 0, 0);
+$color-shadow: rgb(186, 186, 186);
+$color-white-shadow: rgba(255, 255, 255, 0.475);
+$color-light-grey: #e7eef7;
+$gradient-icon: radial-gradient(
+  circle farthest-corner at center center,
+  #8eecf5 0%,
+  #f1c0e8 100%
+);
+
+$hjk: #fff200;
+
+$theme-transition: all 600ms;
+$transition: all 500ms;
+$standard-height: 44px;
+$border-radius: 30px;
+
+// html[data-theme='light']
+
+//..........Light theme...............................................................
+
+$background-color-light: #e7eef7;
+$text-color-light: #79819c;
+
+$shadow-form-light: 5px 5px 10px #c7cdd4, -5px -5px 10px #ffffff;
+$shadow-inset-light: rgb(186, 186, 186) 1px 1px 2px inset,
+  rgb(255, 255, 255) -1px -1px 2px inset;
+
+// Buttons
+$shadow-btn-light: -2px -2px 5px rgba(255, 255, 255, 0.475), 2px 2px 5px #bababa;
+$shadow-btn-light-focus: inset -2px -2px 4px white,
+  inset 2px 2px 4px rgb(186, 186, 186);
+
+// Form
+$shadow-input-light: inset 2px 2px 5px rgb(186, 186, 186),
+  inset -5px -5px 10px white;
+$shadow-input-light-hover: #bababa 1px 1px 2px inset,
+  #ffffff -1px -1px 2px inset;
+
+//..........Dark theme...............................................................
+
+$background-color-dark: #212121;
+$text-color-dark: #b4b9c1;
+
+$shadow-form-dark: 5px 5px 10px #151515, -5px -5px 10px #2d2d2d;
+$shadow-inset-dark: #161616 1px 1px 2px inset, #2c2c2c -1px -1px 2px inset;
+
+// Buttons
+$shadow-btn-dark: 5px 5px 10px #141414, -5px -5px 10px #2e2e2e;
+$shadow-btn-dark-focus: inset -2px -2px 4px #2e2e2e, inset 2px 2px 4px #141414;
+
+// Form
+$shadow-form-dark: 5px 5px 10px #131313, -5px -5px 10px #2f2f2f;
+$shadow-input-dark: inset 2px 2px 5px #161616, inset -5px -5px 10px #2c2c2c;
+$shadow-input-dark-hover: inset 1px 1px 2px #161616, inset -1px -1px 2px #2c2c2c;
+
+//.....  TEXT SHADOWS  ..................................................................
+
+$shadow-text-light: 1px 1px 1px white;
+$shadow-text-dark: 1px 1px 1px rgba(0, 0, 0, 0.25);
+$shadow-text-dark2: 3px 3px 3px rgba(0, 0, 0, 0.35);

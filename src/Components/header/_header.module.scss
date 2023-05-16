@@ -1,0 +1,127 @@
+@import '../../sass/variables';
+
+html[data-theme='light'] {
+  .header {
+    transition: $transition;
+    box-shadow: $shadow-form-light;
+  }
+  .userMenuBox {
+    transition: $transition;
+    background-color: $background-color-light;
+    color: $text-color-light;
+  }
+
+  .logOutBtn {
+    transition: $transition;
+    color: $text-color-light;
+    fill: $text-color-light;
+  }
+}
+
+html[data-theme='dark'] {
+  .header {
+    transition: $transition;
+    box-shadow: $shadow-form-dark;
+  }
+  .userMenuBox {
+    transition: $transition;
+    background-color: $background-color-dark;
+    color: $text-color-dark;
+  }
+
+  .logOutBtn {
+    transition: $transition;
+    color: $text-color-dark;
+    fill: $text-color-dark;
+  }
+}
+
+.header {
+  display: flex;
+  height: 55px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: 320px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  @media (min-width: 320px) {
+    margin: 0;
+  }
+
+  @media (min-width: 768px) {
+    margin-right: 10px;
+  }
+}
+
+.userMenuBox {
+  display: flex;
+  width: max-content;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: $border-radius;
+  padding-right: 10px;
+}
+
+.userName {
+  color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  text-shadow: $shadow-text-dark;
+}
+
+.authContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 320px) {
+    .authorization {
+      width: 100px;
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 270px;
+    font-size: 16px;
+  }
+}
+
+.logOutBtn {
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  border: none;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  text-shadow: $shadow-text-dark;
+  transition: $transition;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-violet !important;
+    fill: $color-violet !important;
+  }
+}

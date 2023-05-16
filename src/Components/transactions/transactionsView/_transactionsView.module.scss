@@ -1,0 +1,124 @@
+@import '../../../sass/variables';
+
+html[data-theme='light'] {
+  .transactionsSection {
+    background-color: $background-color-light;
+    color: $text-color-light;
+    box-shadow: $shadow-form-light;
+  }
+  .navigation {
+    background-color: $background-color-light;
+    box-shadow: $shadow-form-light;
+  }
+  .navLink {
+    transition: $theme-transition;
+    box-shadow: $shadow-input-light-hover;
+  }
+}
+
+html[data-theme='dark'] {
+  .transactionsSection {
+    background-color: $background-color-dark;
+    color: $text-color-dark;
+    box-shadow: $shadow-form-dark;
+  }
+  .navigation {
+    background-color: $background-color-dark;
+    box-shadow: $shadow-form-dark;
+  }
+  .navLink {
+    transition: $theme-transition;
+    box-shadow: $shadow-input-dark-hover;
+  }
+}
+
+.transactionsSection {
+  transition: $theme-transition;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: 320px) {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 66px;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    min-width: 1060px;
+  }
+}
+
+.transactionsContainer {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: 320px) {
+    flex-direction: column;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.navigation {
+  transition: $theme-transition;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+
+  @media (min-width: 320px) {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+  }
+
+  @media (min-width: 768px) {
+    border-radius: $border-radius;
+    position: static;
+    width: 296px;
+    margin-bottom: 10px;
+  }
+}
+
+.navLink {
+  text-decoration: none;
+  display: inline-flex;
+  text-shadow: $shadow-text-dark;
+  height: $standard-height;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 12px;
+  transition: $transition;
+  color: inherit;
+
+  &:hover {
+    color: $color-violet !important;
+  }
+
+  @media (min-width: 320px) {
+    width: 47%;
+    //  box-shadow: $shadow-btn-hover;
+    border-radius: $border-radius;
+  }
+
+  @media (min-width: 768px) {
+    width: 138px;
+    box-shadow: none;
+  }
+}
