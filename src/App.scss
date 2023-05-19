@@ -228,3 +228,55 @@ html[data-theme='dark'] {
   color: #7c5fff !important;
   background-color: transparent !important;
 }
+
+//..... For gh-pages
+
+html[data-theme='light'] {
+  // Date picker wrapper
+  .css-a9rw36 {
+    background-color: $background-color-light !important;
+    color: $text-color-light !important;
+  }
+  // week days
+  .css-10qkmc3 {
+    color: #7c5fff !important;
+  }
+
+  // button - day
+  .css-ub1r1 {
+    color: $text-color-light !important;
+
+    &:hover {
+      box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.475), 2px 2px 5px #bababa !important;
+      color: #7c5fff !important;
+    }
+  }
+
+  // mui selected day
+  .css-wed0tz:not(.Mui-selected) {
+    border: none !important;
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.475), 2px 2px 5px #bababa !important;
+    color: $text-color-light !important;
+  }
+
+  // user selected day
+  .css-ub1r1.Mui-selected {
+    background-color: #7c5fff !important;
+    color: white !important;
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.475), 2px 2px 5px #bababa !important;
+  }
+
+  //  arrow-left
+  .css-h1vjls {
+    color: $text-color-light !important;
+  }
+  //   arrow-right
+  .css-fp6ecq {
+    color: $text-color-light !important;
+  }
+
+  // button to years list
+  .css-1wjkg3 {
+    color: $text-color-light !important;
+  }
+}
