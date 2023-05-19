@@ -232,6 +232,12 @@ html[data-theme='dark'] {
 //..... For gh-pages (date picker)
 
 html[data-theme='light'] {
+  // Calendar icon
+
+  .css-slyssw {
+    color: $text-color-light !important;
+  }
+
   // Date picker wrapper
   .css-a9rw36 {
     background-color: $background-color-light !important;
@@ -261,6 +267,12 @@ html[data-theme='light'] {
     border: none !important;
     box-shadow: $shadow-btn-light !important;
     color: white !important;
+  }
+
+  .css-wed0tz.Mui-selected {
+    background-color: transparent !important;
+    color: #7c5fff;
+    box-shadow: $shadow-btn-light !important;
   }
 
   // user selected day
@@ -320,6 +332,11 @@ html[data-theme='light'] {
 }
 
 html[data-theme='dark'] {
+  // Calendar icon
+
+  .css-slyssw {
+    color: $text-color-dark !important;
+  }
   // Date picker wrapper
   .css-a9rw36 {
     background-color: $background-color-dark !important;
@@ -349,6 +366,12 @@ html[data-theme='dark'] {
     border: none !important;
     box-shadow: $shadow-btn-dark !important;
     color: white !important;
+  }
+
+  .css-wed0tz.Mui-selected {
+    background-color: transparent !important;
+    color: #7c5fff;
+    box-shadow: $shadow-btn-dark !important;
   }
 
   // user selected day
