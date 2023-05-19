@@ -245,6 +245,8 @@ html[data-theme='light'] {
   // button - day
   .css-ub1r1 {
     color: $text-color-light !important;
+    background-color: transparent !important;
+    transition: all 300ms !important;
 
     &:hover {
       box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.475), 2px 2px 5px #bababa !important;
@@ -254,6 +256,7 @@ html[data-theme='light'] {
 
   // mui selected day
   .css-wed0tz:not(.Mui-selected) {
+    transition: all 300ms !important;
     border: none !important;
     box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.475), 2px 2px 5px #bababa !important;
     color: $text-color-light !important;
@@ -261,6 +264,7 @@ html[data-theme='light'] {
 
   // user selected day
   .css-ub1r1.Mui-selected {
+    transition: all 300ms !important;
     background-color: #7c5fff !important;
     color: white !important;
     box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.475), 2px 2px 5px #bababa !important;
@@ -268,15 +272,48 @@ html[data-theme='light'] {
 
   //  arrow-left
   .css-h1vjls {
+    transition: all 300ms !important;
     color: $text-color-light !important;
+    &:hover {
+      background-color: #7c5fff38 !important;
+      color: white !important;
+    }
   }
   //   arrow-right
   .css-fp6ecq {
+    transition: all 300ms !important;
     color: $text-color-light !important;
+    &:hover {
+      background-color: #7c5fff38 !important;
+      color: white !important;
+    }
   }
 
   // button to years list
   .css-1wjkg3 {
+    transition: all 300ms !important;
     color: $text-color-light !important;
+    &:hover {
+      background-color: transparent !important;
+      color: #7c5fff !important;
+    }
+  }
+
+  // mui selected year
+  .css-m1gykc.Mui-selected {
+    background-color: #7c5fff !important;
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.475), 2px 2px 5px #bababa !important;
+    color: white;
+    transition: all 300ms !important;
+  }
+
+  // button year
+  .css-m1gykc {
+    transition: all 300ms !important;
+    &:hover {
+      color: #7c5fff !important;
+      box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.475), 2px 2px 5px #bababa !important;
+      background-color: transparent !important;
+    }
   }
 }
