@@ -262,11 +262,11 @@ html[data-theme='light'] {
 
   // mui selected day
   .css-wed0tz:not(.Mui-selected) {
-    background-color: #7c5fff !important;
+    background-color: transparent !important;
     transition: all 300ms !important;
     border: none !important;
-    box-shadow: $shadow-btn-light !important;
-    color: white !important;
+    box-shadow: $shadow-btn-dark !important;
+    color: #7c5fff !important;
   }
 
   .css-wed0tz.Mui-selected {
@@ -361,11 +361,11 @@ html[data-theme='dark'] {
 
   // mui selected day
   .css-wed0tz:not(.Mui-selected) {
-    background-color: #7c5fff !important;
+    background-color: transparent !important;
     transition: all 300ms !important;
     border: none !important;
     box-shadow: $shadow-btn-dark !important;
-    color: white !important;
+    color: #7c5fff !important;
   }
 
   .css-wed0tz.Mui-selected {
